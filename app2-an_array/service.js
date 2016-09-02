@@ -103,4 +103,6 @@ var myData = [
 
 angular.module('arrayApp').service('service', function() {
 
+	this.data = myData;
+	
 })
