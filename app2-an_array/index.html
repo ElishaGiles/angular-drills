@@ -1,9 +1,14 @@
-<html ng-app="arrayApp">
+<!-- Try 3: 2 minutes 15 seconds -->
+<html ng-app="app">
 	<head>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
-	<body ng-controller="arrayController">
-	
+	<body ng-controller="controller">
+
+		<div ng-repeat="person in people">
+			{{ person.name }}
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

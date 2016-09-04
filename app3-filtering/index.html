@@ -1,16 +1,16 @@
+<!-- Try 3: 5 minutes -->
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="app">
 	<head>
 		<meta charset="utf-8">
 		<title>Set 1 step 3</title>
 	</head>
 	<body ng-controller="controller">
 
-		<!-- {{ test }} -->
-		<input type="text" name="name" value="" ng-model="filterAll">
-		<section ng-repeat="datum in data | filter: filterAll">
-			{{ datum.name }} --- {{ datum.email }} --- {{ datum.phone}}
-		</section>
+		<input type="text" name="name" ng-model="textFilter">
+		<div ng-repeat="person in people | filter: textFilter">
+			{{ person.name }}
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>

@@ -1,7 +1,5 @@
-angular.module("myApp").controller("controller", function($scope, service) {
+angular.module('app').controller('controller', function($scope, service) {
 
-$scope.test = "success";
-
-$scope.data = service.getData();
+  $scope.people = service.data;
 
 })
